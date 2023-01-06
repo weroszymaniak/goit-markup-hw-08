@@ -1,0 +1,97 @@
+.footer {
+    background-color: $backgroundColor;
+    padding: 60px 200px;
+
+    &__address {
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $mainLightColor;
+        font-style: normal;
+        margin-bottom: 0;
+        margin-top: 20px;
+    }
+
+    &__mail {
+        line-height: 1, 71;
+        letter-spacing: 0.03em;
+        color: $contactColorFooter;
+        font-style: normal;
+        margin-top: 9px;
+        margin-bottom: 9px;
+    }
+
+    &__tel {
+        line-height: 1, 71;
+        letter-spacing: 0.03em;
+        color: $contactColorFooter;
+        font-style: normal;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    &__parts {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__header {
+        font-weight: 700;
+        line-height: 1, 71;
+        text-transform: uppercase;
+        letter-spacing: 0.03em;
+        color: $mainLightColor;
+    }
+
+    &__icons {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        margin-top: 16px;
+        padding: 0 32px;
+        gap: 10px;
+
+        &--bottom {
+            display: flex;
+            justify-content: space-between;
+            padding-left: 0px;
+        }
+    }
+
+    &__links {
+        fill: $strokeColor;
+        width: 44px;
+        height: 44px;
+        display: block;
+        transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+            color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+        &--bottom {
+            fill: $mainLightColor;
+            border-radius: 50%;
+            background-color: $footerCircleBg;
+            transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                background-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
+                border-radius 250ms cubic-bezier(0.4, 0, 0.2, 1);
+        }
+        &:hover {
+            border-radius: 50%;
+            background-color: $primaryColor;
+            fill: $mainLightColor;
+        }
+    }
+    &__box:hover > .team__links {
+        border-radius: 50%;
+        background-color: $primaryColor;
+        fill: $mainLightColor;
+    }
+
+    &__box:focus > .team__links {
+        border-radius: 50%;
+        background-color: $primaryColor;
+        fill: $mainLightColor;
+    }
+    &__social {
+        padding: 12px;
+    }
+}

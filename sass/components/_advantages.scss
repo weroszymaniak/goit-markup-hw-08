@@ -1,0 +1,42 @@
+.advantages {
+    display: flex;
+    justify-content: space-between;
+    padding-top: 94px;
+
+    &__item {
+        align-self: flex-start;
+    }
+
+    &__list {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0;
+        gap: 30px;
+    }
+
+    &__title {
+        font-weight: 700;
+        line-height: 1.14;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        justify-items: center;
+    }
+
+    &__description {
+        line-height: 1.71;
+        letter-spacing: 0.03em;
+        color: $contactColor;
+        margin-top: 10px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+    &__icon {
+        background-color: $buttonColor;
+        width: 270px;
+        height: 120px;
+        border-radius: 4px;
+        padding: 25px 100px;
+        margin-bottom: 30px;
+    }
+}
