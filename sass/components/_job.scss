@@ -1,4 +1,6 @@
 .job {
+    display: none;
+    
     &__title {
         font-weight: 700;
         font-size: 36px;
@@ -50,3 +52,56 @@
         margin: 0;
     }
 }
+
+/* .job {
+    &__title {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 1.17;
+        text-align: center;
+        letter-spacing: 0.03em;
+        margin-top: 0px;
+        margin-bottom: 0px;
+    }
+
+    &__list {
+        list-style: none;
+        display: flex;
+        justify-content: space-between;
+        gap: 30px;
+        margin-top: 50px;
+        margin-bottom: 0px;
+        padding-left: 0px;
+    }
+
+    &__box {
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    &__item {
+        display: block;
+    }
+    &__overlay {
+        background-color: rgba(47, 48, 58, 0.8);
+        position: absolute;
+        width: 100%;
+        bottom: 0px;
+        margin: 0;
+        padding: 27px 0;
+    }
+    &__text {
+        color: $mainLightColor;
+        font-family: 'Roboto';
+        font-style: normal;
+        font-weight: 700;
+        font-size: 14px;
+        line-height: 16px;
+        text-align: center;
+        letter-spacing: 0.03em;
+        text-transform: uppercase;
+        margin: 0;
+    }
+} */

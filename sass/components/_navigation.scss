@@ -10,6 +10,36 @@
     }
 
     &__menu {
+        text-decoration: none;
+        color: $mainFontColor;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        list-style: none;
+        padding-left: 93px;
+        gap: 46px;
+        margin: 0;
+
+    }
+
+    &__link {
+        display:none;
+    }
+
+}
+
+/* .navigation {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    &__section {
+        display: inline-flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    &__menu {
         font-weight: 500;
         line-height: 1.14;
         letter-spacing: 0.02em;
@@ -45,4 +75,4 @@
         position: relative;
         bottom: -31px;
     }
-}
+} */

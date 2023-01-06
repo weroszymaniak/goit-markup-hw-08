@@ -2,6 +2,34 @@
     border-bottom: 1px solid $borderColor;
     padding-top: 24px;
     padding-bottom: 24px;
+    width: 480px;
+    margin: 0 auto;
+
+
+    &__field {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        flex-wrap: nowrap;
+        background-color: $mainLightColor;
+        border-bottom-width: 1px solid $borderColor;
+        margin:0;
+    }
+    &__contact {
+       display:none;
+    }
+    &__icon {
+        display:none;
+
+    }
+}
+
+/* @media (min-width: 768px){
+
+.page-header {
+    border-bottom: 1px solid $borderColor;
+    padding-top: 24px;
+    padding-bottom: 24px;
 
     &__field {
         display: flex;
@@ -33,3 +61,4 @@
     }
 }
 
+} */

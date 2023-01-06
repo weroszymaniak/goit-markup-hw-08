@@ -1,5 +1,23 @@
 .logo {
     font-family: 'Raleway';
+    font-size: 24px;
+    font-weight: 400;
+    color: $primaryColor;
+    line-height: 28px;
+    letter-spacing: 0.03em;
+    text-decoration: none;
+}
+.logo-text {
+    &--black {
+        color: $logoTextDark;
+    }
+    &--white {
+        color: $mainLightColor;
+    }
+}
+
+/* .logo {
+    font-family: 'Raleway';
     font-size: 26px;
     font-weight: 700;
     color: $primaryColor;
@@ -14,4 +32,4 @@
     &--white {
         color: $mainLightColor;
     }
-}
+} */
