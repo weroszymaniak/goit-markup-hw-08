@@ -9,7 +9,7 @@
     &__field {
         display: flex;
         align-items: center;
-        justify-content: flex-start;
+        justify-content: space-between;
         flex-wrap: nowrap;
         background-color: $mainLightColor;
         border-bottom-width: 1px solid $borderColor;
@@ -22,6 +22,19 @@
         display:none;
 
     }
+    &__menu{
+        color:$logoTextDark;
+        align-self: flex-end;
+        text-decoration: none;
+        background-color: $itemBoqrderColor;
+        padding: 0;
+
+        &:hover{
+            fill:$primaryColor;
+        }
+
+    }
+
 }
 
 /* @media (min-width: 768px){
