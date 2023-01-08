@@ -1,7 +1,6 @@
 .hero {
     background-color: $backgroundColor;
-    padding-left: 250px;
-    padding-right: 250px;
+    max-width: 480px;
 
     &__background {
         background-color: $backgroundColor;
@@ -12,11 +11,10 @@
             ),
             url(../images/hero-bg-mobile.jpg);
         background-repeat: no-repeat;
-        background-size: 480px 400px;
-        max-width: 480px;
+        background-size: cover;
+        max-width: 100%;
         margin: 0 auto;
-        padding-top: 118px;
-        padding-bottom: 118px;
+        padding: 118px 57px;
     }
 
     &__title {
@@ -27,7 +25,6 @@
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
-        margin: 0 auto;
         margin-bottom: 30px;
     }
 
@@ -50,6 +47,72 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .hero {
+        background-color: $backgroundColor;
+        max-width: 768px;
+
+        &__background {
+            padding: 200px;
+            background-color: $backgroundColor;
+            background-image: linear-gradient(
+                    to bottom,
+                    $gradientColor,
+                    $gradientColor
+                ),
+                url(../images/hero-bg-tablet.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+            max-width: 768px;
+            margin: 0 auto;
+        }
+
+        &__title {
+            font-size: 44px;
+            font-weight: 900;
+            color: $mainLightColor;
+            line-height: 1.36;
+            text-align: center;
+            letter-spacing: 0.06em;
+            text-transform: uppercase;
+            margin: 0 auto;
+            margin-bottom: 30px;
+        }
+
+        &__button {
+            color: $mainLightColor;
+            font-family: 'Roboto', serif;
+            font-weight: 700;
+            font-size: 16px;
+            line-height: 1.88;
+            letter-spacing: 0.06em;
+            background: $primaryColor;
+            text-align: center;
+            display: block;
+            margin: auto;
+            cursor: pointer;
+            box-shadow: 0px 4px 4px $buttonBorderColor;
+            border-radius: 4px;
+            border-style: none;
+            padding: 10px 42px;
+        }
+    }
+}
+@media screen and (min-width: 1200px) {
+    .hero {
+        max-width: 1200px;
+
+        &__background {
+            background-image: linear-gradient(
+                    to bottom,
+                    $gradientColor,
+                    $gradientColor
+                ),
+                url(../images/hero-bg.jpg);
+            max-width: 1200px;
+        }
+    }
+}
 /* .hero {
     background-color: $backgroundColor;
 

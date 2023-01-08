@@ -107,7 +107,27 @@
         padding: 12px;
     }
 }
+@media screen and (min-width: 768px) {
+    .team {
+        &__item{
+            max-width:354px;
+        }
+        &__list{
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        &__icons {
+            padding: 0 74px;
+}}}
 
+@media screen and (min-width: 1200px) {
+    .team {
+        &__item{
+            max-width:270px;
+        }
+        &__icons {
+            padding: 0 32px;
+}}}
 /* .team {
     background-color: $buttonColor;
 

@@ -2,9 +2,8 @@
     border-bottom: 1px solid $borderColor;
     padding-top: 24px;
     padding-bottom: 24px;
-    width: 480px;
+    width: 100%;
     margin: 0 auto;
-
 
     &__field {
         display: flex;
@@ -13,65 +12,81 @@
         flex-wrap: nowrap;
         background-color: $mainLightColor;
         border-bottom-width: 1px solid $borderColor;
-        margin:0;
+        margin: 0;
     }
     &__contact {
-       display:none;
+        display: none;
     }
     &__icon {
-        display:none;
-
+        display: none;
     }
-    &__menu{
-        color:$logoTextDark;
+    &__menu {
+        color: $logoTextDark;
         align-self: flex-end;
         text-decoration: none;
         background-color: $itemBoqrderColor;
         padding: 0;
 
-        &:hover{
-            fill:$primaryColor;
+        &:hover {
+            fill: $primaryColor;
         }
-
-    }
-
-}
-
-/* @media (min-width: 768px){
-
-.page-header {
-    border-bottom: 1px solid $borderColor;
-    padding-top: 24px;
-    padding-bottom: 24px;
-
-    &__field {
-        display: flex;
-        align-items: center;
-        justify-content: space-between;
-        flex-wrap: nowrap;
-        background-color: $mainLightColor;
-        border-bottom-width: 1px solid $borderColor;
-    }
-    &__contact {
-        color: $contactColor;
-        font-weight: 500;
-        line-height: 1.14;
-        letter-spacing: 0.02em;
-        text-decoration: none;
-        display: inline-flex;
-        align-items: center;
-        gap: 0 30px;
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-
-        &:hover,
-        &:focus {
-            color: $primaryColor;
-        }
-    }
-    &__icon {
-        gap:10px;
-        fill: currentColor;
     }
 }
 
-} */
+@media screen and (min-width: 768px) {
+    .page-header {
+        padding-top: 26px;
+        padding-bottom: 26px;
+        max-width: 768px;
+
+        &__field {
+            gap:101px;
+        }
+        &__contact {
+            color: $contactColor;
+            font-weight: 500;
+            line-height: 1.14;
+            letter-spacing: 0.02em;
+            text-decoration: none;
+            align-items: center;
+            gap: 0 30px;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+            display: block;
+            &:hover,
+            &:focus {
+                color: $primaryColor;
+            }
+        }
+        &__icon {
+            gap: 10px;
+            fill: currentColor;
+        }
+        &__menu {
+            display: none;
+        }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .page-header {
+        padding-top: 24px;
+        padding-bottom: 24px;
+        max-width: 1200px;
+
+        &__contact {
+            display: inline-flex;
+            align-items: center;
+            gap: 0 30px;
+            transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+            &:hover,
+            &:focus {
+                color: $primaryColor;
+            }
+        }
+        &__icon {
+            gap: 10px;
+            fill: currentColor;
+        }
+    }
+}

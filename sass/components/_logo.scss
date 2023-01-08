@@ -16,20 +16,15 @@
     }
 }
 
-/* .logo {
-    font-family: 'Raleway';
-    font-size: 26px;
-    font-weight: 700;
-    color: $primaryColor;
-    line-height: 1.19;
-    letter-spacing: 0.03em;
-    text-decoration: none;
+@media screen and (min-width: 768px) {
+    .logo {
+        font-weight: 700;
+    }
 }
-.logo-text {
-    &--black {
-        color: $logoTextDark;
+
+@media screen and (min-width: 1200px) {
+    .logo {
+        font-size: 26px;
+        line-height: 1.19;
     }
-    &--white {
-        color: $mainLightColor;
-    }
-} */
+}

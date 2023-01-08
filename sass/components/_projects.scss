@@ -11,7 +11,7 @@
     padding-bottom: 20px;
     margin-bottom: 30px;
     background: $mainLightColor;
-    border: 1px solid $itemBorderColor;
+    border: 1px solid rgba(238, 238, 238, 1);
     transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
     &:hover {
