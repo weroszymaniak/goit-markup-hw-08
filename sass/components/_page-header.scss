@@ -26,6 +26,10 @@
         text-decoration: none;
         background-color: $itemBoqrderColor;
         padding: 0;
+        margin-right: 0px;
+        display: flex;
+        background-color: transparent;
+        border: none;
 
         &:hover {
             fill: $primaryColor;
@@ -40,7 +44,7 @@
         max-width: 768px;
 
         &__field {
-            gap:101px;
+            gap: 101px;
         }
         &__contact {
             color: $contactColor;
@@ -49,7 +53,6 @@
             letter-spacing: 0.02em;
             text-decoration: none;
             align-items: center;
-            gap: 0 30px;
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             display: block;
             &:hover,
@@ -58,8 +61,8 @@
             }
         }
         &__icon {
-            gap: 10px;
             fill: currentColor;
+            margin-bottom: 10px;
         }
         &__menu {
             display: none;

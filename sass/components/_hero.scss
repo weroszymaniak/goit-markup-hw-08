@@ -1,6 +1,7 @@
 .hero {
     background-color: $backgroundColor;
     max-width: 480px;
+    margin: 0 auto;
 
     &__background {
         background-color: $backgroundColor;
@@ -101,6 +102,7 @@
 @media screen and (min-width: 1200px) {
     .hero {
         max-width: 1200px;
+        background-color: $backgroundColor;
 
         &__background {
             background-image: linear-gradient(
