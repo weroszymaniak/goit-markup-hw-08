@@ -55,7 +55,7 @@
         &--tel {
             color: $primaryColor;
             font-size: 34px;
-            line-height: 40px;
+            line-height: 1,17;
             letter-spacing: 0.02em;
             margin-bottom: 32px;
         }
@@ -69,7 +69,7 @@
         flex-direction: column;
         gap: 32px;
         font-size: 24px;
-        line-height: 28px;
+        line-height: 1,17;
         letter-spacing: 0.02em;
         color: $contactColor;
         padding: 0;
@@ -108,7 +108,7 @@
         text-decoration: none;
         color: $primaryColor;
         font-size: 18px;
-        line-height: 22px;
+        line-height: 1,22;
         letter-spacing: 0.02em;
     }
 }

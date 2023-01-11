@@ -3,7 +3,7 @@
     padding: 60px 100px;
 
     &__address {
-        line-height: 24px;
+        line-height: 1.71;
         letter-spacing: 0.03em;
         color: $mainLightColor;
         font-style: normal;
@@ -17,7 +17,7 @@
         align-items: center;
     }
     &__mail {
-        line-height: 1, 71;
+        line-height: 1.71;
         letter-spacing: 0.03em;
         color: $contactColorFooter;
         font-style: normal;
@@ -27,7 +27,7 @@
     }
 
     &__tel {
-        line-height: 1,71;
+        line-height: 1.71;
         letter-spacing: 0.03em;
         color: $contactColorFooter;
         font-style: normal;
@@ -47,7 +47,7 @@
     &__header {
         font-weight: 700;
         font-size: 14px;
-        line-height: 16px;
+        line-height: 1.14;
         text-transform: uppercase;
         letter-spacing: 0.03em;
         color: $mainLightColor;
