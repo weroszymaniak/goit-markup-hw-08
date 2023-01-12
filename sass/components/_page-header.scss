@@ -39,22 +39,23 @@
 
 @media screen and (min-width: 768px) {
     .page-header {
-        padding-top: 26px;
-        padding-bottom: 26px;
+        padding-top: 3px;
+        padding-bottom: 3px;
         max-width: 768px;
 
         &__field {
             gap: 101px;
         }
         &__contact {
+            list-style: none;
             color: $contactColor;
             font-weight: 500;
             line-height: 1.14;
             letter-spacing: 0.02em;
             text-decoration: none;
-            align-items: center;
             transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
             display: block;
+            padding: 0;
             &:hover,
             &:focus {
                 color: $primaryColor;
@@ -62,6 +63,8 @@
         }
         &__icon {
             fill: currentColor;
+        }
+        &__item:not(:last-child) {
             margin-bottom: 10px;
         }
         &__menu {
@@ -72,8 +75,8 @@
 
 @media screen and (min-width: 1200px) {
     .page-header {
-        padding-top: 24px;
-        padding-bottom: 24px;
+        padding-top: 16px;
+        padding-bottom: 16px;
         max-width: 1200px;
 
         &__contact {
@@ -90,6 +93,9 @@
         &__icon {
             gap: 10px;
             fill: currentColor;
+        }
+        &__item:not(:last-child) {
+            margin-bottom: 0;
         }
     }
 }

@@ -62,6 +62,9 @@
         &--mail {
             color: $contactColor;
         }
+        &--active{
+            color:$primaryColor;
+        }
     }
     &__contacts {
         list-style: none;
