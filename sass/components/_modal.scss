@@ -1,6 +1,5 @@
 .modal {
-    width: 450px;
-    height: 609px;
+    max-width: 450px;
     background-color: $mainLightColor;
     border-radius: 4px;
     position: absolute;
@@ -12,7 +11,6 @@
     z-index: 2;
 
     &__button {
-        border: 1px;
         width: 30px;
         height: 30px;
         border-radius: 50%;
@@ -20,11 +18,14 @@
         padding: 6px;
         background-color: $mainLightColor;
         position: absolute;
-        left: 400px;
+        left: 85%;
         top: 8px;
         color: $logoTextDark;
         cursor: pointer;
         z-index: 2;
+        &:hover {
+            color: $primaryColor;
+        }
     }
 }
 .backdrop {
@@ -45,13 +46,17 @@
     visibility: hidden;
 }
 
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 780px) {
     .modal {
-        width: 528px;
-        height: 581px;
         &__button {
-            left: 490px;
+            left: 90%;
             top: 8px;
         }
+    }
+}
+
+@media screen and (min-width: 1200px) {
+    .modal {
+        max-width: 528px;
     }
 }

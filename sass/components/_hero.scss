@@ -1,7 +1,7 @@
 .hero {
     background-color: $backgroundColor;
-    min-width: 480px;
     margin: 0 auto;
+    max-width: 480px;
 
     &__background {
         background-color: $backgroundColor;
@@ -10,12 +10,12 @@
                 $gradientColor,
                 $gradientColor
             ),
-            url(../images/hero-bg.jpg);
-        background-repeat: no-repeat;
+            url(../images/hero-bg-mobile.jpg);
         background-size: cover;
-        min-width: 100%;
+        background-repeat: no-repeat;
         margin: 0 auto;
         padding: 118px 57px;
+        background-position: center;
     }
 
     &__title {
@@ -47,7 +47,6 @@
         padding: 10px 42px;
     }
     @media (min-device-pixel-ratio: 2),
-        (-webkit-min-device-pixel-ratio: 2),
         (min-resolution: 192dpi),
         (min-resolution: 2dppx) {
         .hero__background {
@@ -56,7 +55,7 @@
                     $gradientColor,
                     $gradientColor
                 ),
-                url('../images/hero-bg@2x.jpg');
+                url('../images/hero-bg-mobile@2x.jpg');
         }
     }
 }
@@ -71,20 +70,58 @@
             background-color: $backgroundColor;
             min-width: 768px;
             margin: 0 auto;
+            background-image: linear-gradient(
+                    to bottom,
+                    $gradientColor,
+                    $gradientColor
+                ),
+                url(../images/hero-bg-tablet.jpg);
+            padding: 118px 57px;
         }
 
         &__title {
             font-size: 26px;
             line-height: 1.61;
         }
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            .hero__background {
+                background-image: linear-gradient(
+                        to bottom,
+                        $gradientColor,
+                        $gradientColor
+                    ),
+                    url('../images/hero-bg-tablet@2x.jpg');
+            }
+        }
     }
 }
+
 @media screen and (min-width: 1200px) {
     .hero {
         min-width: 1200px;
         &__background {
             padding: 200px 380px;
             min-width: 1200px;
+            background-image: linear-gradient(
+                    to bottom,
+                    $gradientColor,
+                    $gradientColor
+                ),
+                url(../images/hero-bg.jpg);
+        }
+        @media (min-device-pixel-ratio: 2),
+            (min-resolution: 192dpi),
+            (min-resolution: 2dppx) {
+            .hero__background {
+                background-image: linear-gradient(
+                        to bottom,
+                        $gradientColor,
+                        $gradientColor
+                    ),
+                    url('../images/hero-bg@2x.jpg');
+            }
         }
     }
 }
