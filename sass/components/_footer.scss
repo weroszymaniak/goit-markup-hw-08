@@ -1,6 +1,6 @@
 .footer {
     background-color: $backgroundColor;
-    padding: 60px 100px;
+    padding: 60px 30px;
 
     &__address {
         line-height: 1.71;
@@ -123,6 +123,7 @@
         }
         &__address {
             text-align: start;
+            width: 250px;
         }
         &__mail {
             text-align: start;
@@ -136,10 +137,9 @@
         &__parts {
             flex-direction: row;
             justify-content: space-between;
-            align-items: flex-start;
+            align-items: center;
             gap: 60px;
             flex-wrap: nowrap;
         }
     }
 }
-

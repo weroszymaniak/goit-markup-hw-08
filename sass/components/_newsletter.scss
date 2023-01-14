@@ -1,7 +1,10 @@
 .newsletter {
+    width: 100%;
+    margin: 0 auto;
+    align-self: center;
     &__title {
         font-weight: 700;
-        line-height: 1,14;
+        line-height: 1, 14;
         letter-spacing: 0.03em;
         text-transform: uppercase;
         color: $mainLightColor;
@@ -12,9 +15,9 @@
     }
     &__field {
         display: flex;
-        justify-content: space-between;
     }
     &__form {
+        width: 100%;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
@@ -26,11 +29,12 @@
         background-color: $backgroundColor;
         border-radius: 4px;
         outline: none;
-        max-width: 450px;
-        padding: 16px 387px 15px 15px;
+        width: 100%;
+        padding: 16px 50px 16px 15px;
+        align-self: stretch;
     }
     &__btn {
-        padding: 13px 28px 13px 42px;
+        padding: 11px 28px 11px 42px;
         background: $primaryColor;
         box-shadow: 0px 4px 4px $buttonBorderColor;
         border-radius: 4px;
@@ -54,23 +58,37 @@
 @media screen and (min-width: 768px) {
     .newsletter {
         margin: 0 auto;
+        &__mail {
+            padding: 16px 270px 16px 15px;
+            align-self: center;
+        }
+
+        &__field {
+            justify-content: center;
+            padding: 0 130px;
+        }
     }
 }
 
 @media screen and (min-width: 1200px) {
     .newsletter {
-        margin:0 auto;
+        margin: 0 auto;
 
         &__mail {
             min-width: 358px;
-            padding: 16px 204px 15px 15px;
+            padding: 16px 180px 16px 15px;
         }
         &__form {
             flex-direction: row;
             gap: 12px;
+            max-width: 580px;
         }
         &__title {
             text-align: left;
+        }
+        &__field {
+            justify-content: space-between;
+            padding: 0;
         }
     }
 }

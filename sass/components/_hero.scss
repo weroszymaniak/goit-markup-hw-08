@@ -14,7 +14,8 @@
         background-size: cover;
         background-repeat: no-repeat;
         margin: 0 auto;
-        padding: 118px 57px;
+        padding-top: 118px;
+        padding-bottom: 118px;
         background-position: center;
     }
 
@@ -26,6 +27,8 @@
         text-align: center;
         letter-spacing: 0.06em;
         text-transform: uppercase;
+        max-width: 365px;
+        margin: 0 auto;
         margin-bottom: 30px;
     }
 
@@ -62,27 +65,20 @@
 
 @media screen and (min-width: 768px) {
     .hero {
-        background-color: $backgroundColor;
         min-width: 768px;
 
         &__background {
-            padding: 118px 185px;
-            background-color: $backgroundColor;
+            padding-top: 118px;
+            padding-bottom: 118px;
             min-width: 768px;
-            margin: 0 auto;
             background-image: linear-gradient(
                     to bottom,
                     $gradientColor,
                     $gradientColor
                 ),
                 url(../images/hero-bg-tablet.jpg);
-            padding: 118px 57px;
         }
 
-        &__title {
-            font-size: 26px;
-            line-height: 1.61;
-        }
         @media (min-device-pixel-ratio: 2),
             (min-resolution: 192dpi),
             (min-resolution: 2dppx) {
@@ -100,10 +96,11 @@
 
 @media screen and (min-width: 1200px) {
     .hero {
-        min-width: 1200px;
+        min-width: 1600px;
         &__background {
-            padding: 200px 380px;
-            min-width: 1200px;
+            padding-top: 200px;
+            padding-bottom: 200px;
+            min-width: 1600px;
             background-image: linear-gradient(
                     to bottom,
                     $gradientColor,

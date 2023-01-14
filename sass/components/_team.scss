@@ -10,15 +10,18 @@
         margin-top: 0px;
         margin-bottom: 0px;
     }
-
+    &__field {
+        width: 100%;
+    }
     &__item {
         background-color: $mainLightColor;
         box-shadow: 0px 1px 3px $boxShadowColor, 0px 1px 1px rgba(0, 0, 0, 0.14),
             0px 2px 1px rgba(0, 0, 0, 0.2);
         border-radius: 0px 0px 4px 4px;
         padding-bottom: 30px;
-        max-width: 450px;
+        width: 100%;
         max-height: 622px;
+        max-width: 450px;
     }
     &__name {
         font-weight: 500;
@@ -52,11 +55,11 @@
     }
     &__icons {
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         align-items: center;
         list-style: none;
         margin-top: 16px;
-        padding: 0 122px;
+        padding: 0;
         gap: 10px;
 
         &--bottom {
@@ -118,6 +121,9 @@
         &__icons {
             padding: 0 74px;
         }
+        &__field {
+            width: calc((100% - 30px) / 2);
+        }
     }
 }
 
@@ -131,6 +137,9 @@
         }
         &__header {
             font-size: 36px;
+        }
+        &__field {
+            width: calc((100% - 90px) / 4);
         }
     }
 }

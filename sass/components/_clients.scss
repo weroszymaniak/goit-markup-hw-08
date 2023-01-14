@@ -12,19 +12,25 @@
     &__list {
         list-style: none;
         display: flex;
-        justify-content: space-between;
+        justify-content: center;
         flex-wrap: wrap;
         gap: 30px;
         margin-top: 60px;
         margin-bottom: 0px;
         padding-left: 0;
     }
+    &__box {
+        flex-basis: calc((100% - 30px) / 2);
+    }
 
     &__item {
         border: 1px solid $strokeColor;
         border-radius: 4px;
-        display: inline-block;
-        padding: 16px 50px;
+        padding: 12px 25px;
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        max-width: 210px;
         fill: $strokeColor;
         transition: fill 250ms cubic-bezier(0.4, 0, 0.2, 1);
 
@@ -41,6 +47,9 @@
         &__item {
             padding: 16px 59px;
         }
+        &__box {
+            flex-basis: calc((100% - 60px) / 3);
+        }
     }
 }
 @media screen and (min-width: 1200px) {
@@ -48,11 +57,14 @@
         &__item {
             padding: 13px 31px;
         }
-        &__list{
-            gap: 0px;
+        &__list {
+            flex-wrap: nowrap;
         }
-        &__title{
+        &__title {
             font-size: 36px;
+        }
+        &__box {
+            flex-basis: calc((100% - 150px) / 6);
         }
     }
 }
