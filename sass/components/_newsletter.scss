@@ -59,13 +59,16 @@
     .newsletter {
         margin: 0 auto;
         &__mail {
-            padding: 16px 270px 16px 15px;
             align-self: center;
+            max-width: 450px;
         }
 
         &__field {
             justify-content: center;
-            padding: 0 130px;
+        }
+        &__space {
+            display: flex;
+            justify-content: center;
         }
     }
 }
