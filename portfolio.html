@@ -2,6 +2,7 @@
 <html lang="pl">
     <head>
         <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Web Studio</title>
         <link
             rel="stylesheet"
@@ -49,29 +50,43 @@
                     </nav>
                 </div>
 
-                <div class="page-header__contact">
-                    <a
-                        class="page-header__contact page-header__icon"
-                        href="mailto:info@devstudio.com"
-                    >
-                        <svg width="16" height="12">
-                            <use href="./images/icons.svg#icon-envelope"></use>
-                        </svg>
-                        info@devstudio.com</a
-                    >
-
-                    <a
-                        class="page-header__contact page-header__icon"
-                        href="tel:+48111111111"
-                    >
-                        <svg width="10" height="16">
-                            <use
-                                href="./images/icons.svg#icon-smartphone"
-                            ></use>
-                        </svg>
-                        +48 111 111 111</a
-                    >
-                </div>
+                <ul class="page-header__contact">
+                    <li class="page-header__item">
+                        <a
+                            class="page-header__contact page-header__icon"
+                            href="mailto:info@devstudio.com"
+                        >
+                            <svg width="16" height="12">
+                                <use
+                                    href="./images/icons.svg#icon-envelope"
+                                ></use>
+                            </svg>
+                            info@devstudio.com</a
+                        >
+                    </li>
+                    <li class="page-header__item">
+                        <a
+                            class="page-header__contact page-header__icon"
+                            href="tel:+48111111111"
+                        >
+                            <svg width="10" height="16">
+                                <use
+                                    href="./images/icons.svg#icon-smartphone"
+                                ></use>
+                            </svg>
+                            +48 111 111 111</a
+                        >
+                    </li>
+                </ul>
+                <button
+                    class="page-header__menu menu-toggle js-open-menu"
+                    aria-expanded="false"
+                    aria-controls="mobile-menu"
+                >
+                    <svg width="40" height="40" fill="currentColor">
+                        <use href="./images/icons.svg#icon-menu_40px"></use>
+                    </svg>
+                </button>
             </div>
         </header>
         <main>
@@ -122,6 +137,7 @@
                                     </div>
                                     <img
                                         src="images/portfolio/technocrack.jpg"
+                                        srcset="images/portfolio/technocrack@2x.jpg 2x"
                                         width="370"
                                         height="294"
                                     />
@@ -149,6 +165,9 @@
                                     </div>
                                     <img
                                         src="images/portfolio/new-orlean.jpg"
+                                        srcset="
+                                            images/portfolio/new-orlean@2x.jpg 2x
+                                        "
                                         width="370"
                                         height="294"
                                     />
@@ -177,6 +196,9 @@
                                     </div>
                                     <img
                                         src="images/portfolio/seafood.jpg"
+                                        srcset="
+                                            images/portfolio/seafood@2x.jpg 2x
+                                        "
                                         width="370"
                                         height="294"
                                     />
@@ -204,6 +226,9 @@
                                     </div>
                                     <img
                                         src="images/portfolio/pprime.jpg"
+                                        srcset="
+                                            images/portfolio/pprime@2x.jpg 2x
+                                        "
                                         width="370"
                                         height="294"
                                     />
@@ -231,6 +256,9 @@
                                     </div>
                                     <img
                                         src="images/portfolio/pboxes.jpg"
+                                        srcset="
+                                            images/portfolio/pboxes@2x.jpg 2x
+                                        "
                                         width="370"
                                         height="294"
                                     />
@@ -258,6 +286,9 @@
                                     </div>
                                     <img
                                         src="images/portfolio/noborders.jpg"
+                                        srcset="
+                                            images/portfolio/noborders@2x.jpg 2x
+                                        "
                                         width="370"
                                         height="294"
                                     />
@@ -287,6 +318,9 @@
                                     </div>
                                     <img
                                         src="images/portfolio/magazine.jpg"
+                                        srcset="
+                                            images/portfolio/magazine@2x.jpg 2x
+                                        "
                                         width="370"
                                         height="294"
                                     />
@@ -314,6 +348,7 @@
                                     </div>
                                     <img
                                         src="images/portfolio/tag.jpg"
+                                        srcset="images/portfolio/tag@2x.jpg 2x"
                                         width="370"
                                         height="294"
                                     />
@@ -339,6 +374,9 @@
                                     </div>
                                     <img
                                         src="images/portfolio/growing.jpg"
+                                        srcset="
+                                            images/portfolio/growing@2x.jpg 2x
+                                        "
                                         width="370"
                                         height="294"
                                     />
@@ -358,7 +396,7 @@
         <!-- FOOTER -->
         <footer class="footer">
             <div class="container footer__parts">
-                <div>
+                <div class="footer__data">
                     <a href="index.html" class="logo"
                         >Web<span class="logo-text logo-text--white"
                             >Studio</span
@@ -448,11 +486,11 @@
                         </li>
                     </ul>
                 </div>
-                <div>
-                    <h3 class="newsletter">Zapisz się do newslettera</h3>
+                <div class="newsletter">
+                    <h3 class="newsletter__title">Zapisz się do newslettera</h3>
                     <div class="newsletter__field">
                         <form class="newsletter__form">
-                            <label for="newsletter">
+                            <label class="newsletter__space" for="newsletter">
                                 <input
                                     class="newsletter__mail"
                                     type="mail"
