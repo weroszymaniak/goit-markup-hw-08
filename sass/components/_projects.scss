@@ -8,7 +8,6 @@
     margin-top: 40px;
 
     &__item {
-        width: 100%;
         max-width: 450px;
         padding-bottom: 20px;
         margin-bottom: 30px;
@@ -34,7 +33,6 @@
         display: flex;
         overflow: hidden;
         width: 100%;
-        max-width: 450px;
     }
     &__bg {
         background-color: rgba(33, 150, 243, 0.9);
@@ -86,6 +84,15 @@
     }
 }
 
+@media screen and (min-width: 768px) {
+    .project {
+        &__list {
+        }
+        &__item {
+            max-width: 354px;
+        }
+    }
+}
 
 /* .project {
     list-style: none;
